@@ -33,7 +33,7 @@ using namespace std;
         while(i>=0){
             while(i>=0 && s[i]==' ') i--; //Skips extra spaces
             if(i<0) break;
-            int end=i;
+            int end=i;//end index of word
             while(i>=0 && s[i]!=' ') i--;
             string word=s.substr(i+1,end-i);
             if(!ans.empty()) ans+=" ";
