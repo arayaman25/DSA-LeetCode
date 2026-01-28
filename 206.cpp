@@ -48,5 +48,4 @@ using namespace std;
     front->next=head;
     head->next=NULL;
     return newHead;
-    
  }
