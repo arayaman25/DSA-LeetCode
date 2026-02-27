@@ -19,7 +19,6 @@ using namespace std;
             curr=nextNode;
         }
         return prev;
-        
     }
 
 //stack method - extra space
