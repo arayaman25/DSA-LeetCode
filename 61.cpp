@@ -17,7 +17,7 @@ using namespace std;
         return temp;
 
     }
-    ListNode* rotateRight(ListNode* head, int k) {
+    ListNode* rotateRight(ListNode* head, int k) { //O(n × k)
         if (head == NULL || head->next == NULL) return head;
         ListNode* temp=head;
         int len=0;
@@ -38,4 +38,28 @@ using namespace std;
         }
         return head;
         
+    }
+
+        ListNode* rotateRight(ListNode* head, int k) {  //O(1)
+        if (head == NULL || head->next == NULL) return head;
+        int len = 1;
+        ListNode* temp = head;
+        while (temp->next != NULL) {
+            temp = temp->next;
+            len++;
+        }
+        k = k % len;
+        if (k == 0) return head;
+
+        temp->next = head;
+
+        int steps = len - k;
+        ListNode* last = head;
+        for (int i = 1; i < steps; i++) {
+            last = last->next;
+        }
+        ListNode* newHead = last->next;
+        last->next = NULL;
+
+        return newHead;
     }
