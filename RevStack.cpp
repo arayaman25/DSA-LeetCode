@@ -1,26 +1,21 @@
 #include <iostream>
 using namespace std;
 void insert(stack<int> &st,int x){
-    if(st.size()==0 || st.top()<=x ){ 
+    if(st.size()==0 ){ 
         st.push(x);
         return;
     }
-    else{
         int a=st.top();
         st.pop();
         insert(st,x);
         st.push(a);
-    }
 }
-void sortStack(stack<int> &st) {
-    if(!st.empty()){
-        int x=st.top();
-        st.pop();
+    void reverseStack(stack<int> &st) {
+        if(st.size()>0){
+            int x=st.top();
+            st.pop();
+            reverseStack(st);
+            insert(st,x);
 
-        sortStack(st);
-        insert(st,x);
-
+        }
     }
-    
-}
- 
