@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
-int singleNumber(vector<int>& nums) {
-    int XOR=0;
-    int n=nums.size();
-    for(int i=0;i<n;i++)
-    {
-        XOR^=nums[i];
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+    int x=0;
+    for(int i=0;i<nums.size();i++) x^=nums[i];
+    return x;
     }
-    return XOR;
-
-}
+};
 
 int singleNumber(vector<int>& nums) {
     int n = nums.size();
