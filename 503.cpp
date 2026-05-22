@@ -1,4 +1,6 @@
-
+#include <iostream>
+using namespace std;
+//brutee
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
@@ -7,8 +9,8 @@ public:
         for(int i = 0; i < n; i++) {
             int ng = -1;
 
-            for(int j = 1; j < n; j++) {
-                int idx = (i + j) % n;
+            for(int j = i+1; j <= i+n-1 ; j++) {
+                int idx = j % n;
                 if(nums[idx] > nums[i]) {
                     ng = nums[idx];
                     break;
