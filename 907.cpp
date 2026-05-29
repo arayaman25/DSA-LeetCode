@@ -127,4 +127,4 @@ public:
     long long subArrayRanges(vector<int>& nums) {
         return sumSubarrayMaxs(nums)-sumSubarrayMins(nums);
     }
-};85
+};
