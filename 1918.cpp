@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 
-23class Solution {
+class Solution {
 public:
     int kthSmallest(vector<int> &arr, int k) {
 
