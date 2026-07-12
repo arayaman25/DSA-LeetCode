@@ -1,7 +1,8 @@
 #include <iostream>
 #include <algorithm>
-
 using namespace std;
+
+//brute
 void moveZeroes(vector<int>& nums) {
     int n=nums.size();
     int j=0;
