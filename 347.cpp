@@ -63,7 +63,6 @@ public:
 //bucket Sort
 class Solution {
 public:
-    typedef pair<int,int> P;
     vector<int> topKFrequent(vector<int>& nums, int k) {
         int n=nums.size();
         unordered_map<int,int> mpp;
