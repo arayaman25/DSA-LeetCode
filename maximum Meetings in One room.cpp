@@ -2,7 +2,7 @@
 using namespace std;
 
 // TC : O(n) + O(nlogn) + O(n) + O(nlogn) = O(nlogn)
-// SC : O(n)
+// SC : O(n) ans and esi
 class Solution {
   public:
     vector<int> maxMeetings(vector<int> &s, vector<int> &f) {
