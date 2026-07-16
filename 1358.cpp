@@ -21,6 +21,8 @@ public:
     }
 };
 
+//--------------------------------------------------
+
 //brute optimized
 class Solution {
 public:
@@ -41,6 +43,8 @@ public:
     }
 };
 
+//--------------------------------------------------
+
 //optimal
 class Solution {
 public:
@@ -48,6 +52,8 @@ public:
         int n=s.size();
         int res=0;
         vector<int> lastInd={-1,-1,-1};
+
+//--------------------------------------------------
         for(int i=0;i<n;i++){
             lastInd[s[i]-'a']=i;
             if(lastInd[1]>=0 && lastInd[2]>=0 && lastInd[0]>=0){
@@ -57,3 +63,5 @@ public:
        return res; 
     }
 };
+
+//--------------------------------------------------

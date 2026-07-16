@@ -22,6 +22,8 @@ public:
     }
 };
 
+//--------------------------------------------------
+
 
 
 //could be done using the subarray sum equals k approch Q560

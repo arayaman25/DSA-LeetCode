@@ -14,6 +14,8 @@ public:
         }
     };
 
+//--------------------------------------------------
+
     Node* head = new Node(-1, -1);
     Node* tail = new Node(-1, -1);
 
@@ -74,6 +76,8 @@ public:
         m[key] = head->next;
     }
 };
+
+//--------------------------------------------------
 
 /**
  * Your LRUCache object will be instantiated and called as such:

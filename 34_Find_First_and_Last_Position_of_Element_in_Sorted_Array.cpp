@@ -34,7 +34,11 @@ using namespace std;
         int n=nums.size();
         int lb=LowerBound(nums,n,target);
         if(lb==n || nums[lb]!=target) return {-1,-1};
+
+//--------------------------------------------------
         return {lb,UpperBound(nums,n,target)-1};
+
+//--------------------------------------------------
     }
 
     // other method below
@@ -70,6 +74,8 @@ using namespace std;
     vector<int> searchRange(vector<int>& nums, int target) {
         int n=nums.size();
         return {first(nums,n,target),last(nums,n,target)};
+
+//--------------------------------------------------
     }
 
 int main(){

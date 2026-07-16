@@ -19,6 +19,8 @@ using namespace std;
 
 int main(){
     vector<int> v={5,3,2,4,1};
+
+//--------------------------------------------------
     cout<<numberOfInversions(v)<<endl;
     return 0;
 

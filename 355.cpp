@@ -68,6 +68,8 @@ public:
     }
 };
 
+//--------------------------------------------------
+
 /**
  * Your Twitter object will be instantiated and called as such:
  * Twitter* obj = new Twitter();

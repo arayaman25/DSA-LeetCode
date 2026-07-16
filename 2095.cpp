@@ -9,6 +9,8 @@ using namespace std;
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
 
+//--------------------------------------------------
+
    //brute
   ListNode* deleteMiddle(ListNode* head) {
         if (head == NULL || head->next == NULL) return NULL;

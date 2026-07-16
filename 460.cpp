@@ -9,6 +9,8 @@ private:
         int freq;
     };
 
+//--------------------------------------------------
+
     int capacity;
     int minFreq;
 
@@ -77,9 +79,13 @@ public:
         // Insert new key
         cache[key] = {value, 1};
 
+//--------------------------------------------------
+
         freqList[1].push_front(key);
         position[key] = freqList[1].begin();
 
         minFreq = 1;
     }
 };
+
+//--------------------------------------------------

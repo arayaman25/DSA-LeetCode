@@ -9,6 +9,8 @@ using namespace std;
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
+
+//--------------------------------------------------
  
 
     ListNode* Brute_middleNode(ListNode* head) { //O(N)+O(N/2)

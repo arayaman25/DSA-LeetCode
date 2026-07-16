@@ -9,6 +9,8 @@ using namespace std;
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
 
+//--------------------------------------------------
+
   //brute 
   ListNode* removeNthFromEnd(ListNode* head, int n) {
         if( head==NULL) return NULL;

@@ -7,7 +7,9 @@ using namespace std;
       ListNode() : val(0), next(nullptr) {}
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
-  }; 
+  };
+
+//-------------------------------------------------- 
   ListNode* find2ndLast(ListNode* head) {
         if (head == NULL || head->next == NULL) return NULL;
         ListNode* temp=head;

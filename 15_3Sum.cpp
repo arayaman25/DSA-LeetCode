@@ -14,6 +14,8 @@ vector<vector<int>> threeSum(vector<int>& nums){
                 sum=nums[i]+nums[j]+nums[k];
                 if(sum==0){
                    vector<int> temp={nums[i],nums[j],nums[k]};
+
+//--------------------------------------------------
                     sort(temp.begin(), temp.end());  // avoid duplicates
                     st.insert(temp);
                 }
@@ -37,6 +39,8 @@ vector<vector<int>> threeSum2(vector<int>& nums) {
 
                 if (hashset.find(third) != hashset.end()) {
                     vector<int> temp = {nums[i], nums[j], third};
+
+//--------------------------------------------------
                     sort(temp.begin(), temp.end());
                     ans.insert(temp);
                 }

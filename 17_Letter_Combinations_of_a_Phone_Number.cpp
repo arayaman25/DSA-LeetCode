@@ -16,7 +16,9 @@ public:
         }
     }
     vector<string> letterCombinations(string digits) {
-        string combos[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};//0,1,2,3.....
+        string combos[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+//--------------------------------------------------//0,1,2,3.....
         vector<string> ans;
         string s="";
         findCombination(digits,0,ans,s,combos);
@@ -24,3 +26,5 @@ public:
 
     }
 };
+
+//--------------------------------------------------

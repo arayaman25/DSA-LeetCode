@@ -28,6 +28,8 @@ public:
     }
 };
 
+//--------------------------------------------------
+
 //optimal
 class Solution {
 public:
@@ -128,3 +130,5 @@ public:
         return sumSubarrayMaxs(nums)-sumSubarrayMins(nums);
     }
 };
+
+//--------------------------------------------------

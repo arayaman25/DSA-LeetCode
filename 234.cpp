@@ -9,6 +9,8 @@ using namespace std;
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
 
+//--------------------------------------------------
+
   //stack - last in first out
     bool isPalindrome(ListNode* head) {
         stack<int> st;
