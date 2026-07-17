@@ -1,6 +1,33 @@
 #include <iostream>
 using namespace std;
 
+
+//TC : O (N^2) SC: O(1)
+class Solution {
+public:
+    int minPlatform(vector<int>& arr, vector<int>& dep) {
+        int n = arr.size();
+        int maxPlatforms = 1;
+
+        for (int i = 0; i < n; i++) {
+            int platforms = 1;
+
+            for (int j = 0; j < n; j++) {
+                if (i == j) continue;
+
+                if (arr[j] <= arr[i] && dep[j] >= arr[i]) {
+                    platforms++;
+                }
+            }
+
+            maxPlatforms = max(maxPlatforms, platforms);
+        }
+
+        return maxPlatforms;
+    }
+};
+//-------------------------------------------------------------------------------------
+
 //TC : O 2(N + NlogN) SC: O(1)
 class Solution {
   public:
