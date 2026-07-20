@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//TC: O(NlogN + N) , SC : O(N)
 vector<vector<int>> merge(vector<vector<int>>& intervals){
     sort(intervals.begin(),intervals.end());
     vector<vector<int>> ans;
