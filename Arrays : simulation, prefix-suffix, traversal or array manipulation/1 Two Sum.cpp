@@ -10,14 +10,11 @@ vector<int> twoSum(int n, vector<int> &arr, int target) {
         int req = target - num;
         if (mpp.find(req) != mpp.end()) {
             return {mpp[req], i};
-
-//--------------------------------------------------
         }
         mpp[num] = i;
     }
     return { -1, -1};
 
-//--------------------------------------------------
 }
 
 
