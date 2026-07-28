@@ -31,6 +31,8 @@ public:
     }
 };
 
+
+//iterative
 //using stack - LIFO
 // TC : O(N) SC: O(N) ie ht of BT
 
