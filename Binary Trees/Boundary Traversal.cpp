@@ -14,6 +14,8 @@ struct TreeNode {
         : val(x), left(left), right(right) {}
 };
 
+// TC : O(N) SC: O(N)
+
 // Check if a node is a leaf
 bool isLeaf(TreeNode* node) {
     return node->left == nullptr && node->right == nullptr;
