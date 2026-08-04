@@ -26,13 +26,10 @@ void addLeftBoundary(TreeNode* root, vector<int>& res) {
     TreeNode* cur = root->left;
 
     while (cur) {
-        if (!isLeaf(cur))
-            res.push_back(cur->val);
+        if (!isLeaf(cur)) res.push_back(cur->val);
 
-        if (cur->left)
-            cur = cur->left;
-        else
-            cur = cur->right;
+        if (cur->left) cur = cur->left;
+        else cur = cur->right;
     }
 }
 
@@ -42,13 +39,10 @@ void addRightBoundary(TreeNode* root, vector<int>& res) {
     vector<int> temp;
 
     while (cur) {
-        if (!isLeaf(cur))
-            temp.push_back(cur->val);
+        if (!isLeaf(cur)) temp.push_back(cur->val);
 
-        if (cur->right)
-            cur = cur->right;
-        else
-            cur = cur->left;
+        if (cur->right) cur = cur->right;
+        else cur = cur->left;
     }
 
     for (int i = temp.size() - 1; i >= 0; i--) {
@@ -58,8 +52,7 @@ void addRightBoundary(TreeNode* root, vector<int>& res) {
 
 // Add all leaf nodes
 void addLeaves(TreeNode* root, vector<int>& res) {
-    if (root == nullptr)
-        return;
+    if (root == nullptr) return;
 
     if (isLeaf(root)) {
         res.push_back(root->val);
@@ -74,11 +67,9 @@ void addLeaves(TreeNode* root, vector<int>& res) {
 vector<int> printBoundary(TreeNode* root) {
     vector<int> res;
 
-    if (root == nullptr)
-        return res;
+    if (root == nullptr) return res;
 
-    if (!isLeaf(root))
-        res.push_back(root->val);
+    if (!isLeaf(root)) res.push_back(root->val);
 
     addLeftBoundary(root, res);
     addLeaves(root, res);
