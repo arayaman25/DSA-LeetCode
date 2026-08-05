@@ -22,7 +22,6 @@ class Node {
 class Solution {
   public:
     vector<int> bottomView(Node *root) {
-        // code here
         vector<int> ans;
         map<int,int> mp;
         if(root == NULL) return ans;
