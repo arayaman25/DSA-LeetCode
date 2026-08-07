@@ -19,28 +19,21 @@ using namespace std;
 class Solution {
 public:
     void getPath(TreeNode* root, vector<string> &ans, string temp){
-        if(root == NULL) return;
-
         if(root ->left == NULL && root ->right == NULL){
-            if(temp.size() > 0){
-                temp = temp + '-' + '>';
-            }
-            temp += to_string(root -> val);
             ans.push_back(temp);
             return;
         }
 
-        if(temp.size() > 0){
-            temp = temp + '-' + '>';
+        if(root -> left){
+            getPath(root -> left, ans, temp + "->" + to_string(root -> left -> val));
         }
-
-        temp += to_string(root -> val);
-        getPath(root -> left, ans, temp);
-        getPath(root -> right, ans, temp);
+        if(root -> right){
+            getPath(root -> right, ans, temp + "->" + to_string(root -> right -> val));
+        }
     }
     vector<string> binaryTreePaths(TreeNode* root) {
         vector<string> ans;
-        string temp="";
+        string temp = to_string(root -> val);
         getPath(root, ans, temp);    
         return ans;
     }
