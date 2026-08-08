@@ -44,3 +44,11 @@ public:
 
     }
 };
+
+/* Trick or rules that helped :
+If the current letters match → Take it! Easy win.
+If they don't match → You can use your joker card, BUT only if it's safe:
+✓ Safe if this is the last letter you need (finish line!)
+✓ Safe if you know there are more matching letters ahead (checked using the "last" array)
+✗ Not safe if using it now would trap you (no matches left ahead)
+If you can't match and can't use the joker → Skip this letter and keep walkin */
