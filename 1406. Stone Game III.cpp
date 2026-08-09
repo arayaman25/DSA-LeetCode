@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// TC: O(n)
+// SC: O(n)
 
 class Solution {
 public:
