@@ -38,11 +38,4 @@ int maxProfitOptimal(vector<int>& prices) {
     return maxProfit;
 }
 
-int main() {
-    int x;
-    cin>>x;
 
-    cout << "Hey. " << x;
-
-    return 0;
-}
