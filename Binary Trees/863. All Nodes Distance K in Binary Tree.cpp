@@ -14,7 +14,7 @@ using namespace std;
   };
   
 
-// TC : O(N^2) SC: O(N)
+// TC : O(N2) SC: O(N)
 class Solution {
 public:
     void findParent(TreeNode* root, unordered_map<TreeNode*, TreeNode*> &parent){
