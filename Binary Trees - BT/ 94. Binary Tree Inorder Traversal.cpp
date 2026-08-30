@@ -14,7 +14,7 @@ using namespace std;
   };
 
   class Solution {
-public:
+    public:
     void inOrder(TreeNode* node, vector<int> &arr){
         if(node == NULL) return;
 
@@ -55,7 +55,7 @@ public:
         }
         return inorder;
         
-    }
+    } 
 };
 
 
