@@ -12,7 +12,7 @@ using namespace std;
 
 
   // TC : O(N) 
-  //SC: O(N)
+  //SC: O(H)
 class Solution {
 public:
     class Info {
