@@ -36,12 +36,12 @@ public:
 class Solution {
 public:
 
-    void bfs(vector<vector<int>>& isConnected, vector<int>& vis, int start) {
+    void bfs(vector<vector<int>>& isConnected, vector<bool>& vis, int start) {
         int n = isConnected.size();
 
         queue<int> q;
         q.push(start);
-        vis[start] = 1;
+        vis[start] = true;
 
         while (!q.empty()) {
             int node = q.front();
@@ -49,7 +49,7 @@ public:
 
             for (int v = 0; v < n; v++) {
                 if (isConnected[node][v] == 1 && !vis[v]) {
-                    vis[v] = 1;
+                    vis[v] = true;
                     q.push(v);
                 }
             }
@@ -58,7 +58,7 @@ public:
 
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size();
-        vector<int> vis(n, 0);
+        vector<bool> vis(n, false);
 
         int cnt = 0;
 
