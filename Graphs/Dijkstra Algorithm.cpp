@@ -15,7 +15,7 @@ class Solution {
             int wt = edge[2];
 
             adj[u].push_back({v, wt});
-            adj[v].push_back({u, wt});  // Undirected graph
+            adj[v].push_back({u, wt});  // Undirected graph  
         }
 
         priority_queue<
