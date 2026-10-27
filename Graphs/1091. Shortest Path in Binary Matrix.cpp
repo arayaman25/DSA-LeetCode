@@ -15,7 +15,7 @@ public:
         };
         
         queue<pair<int, int>> que;
-        que.push({0, 0});
+        que.push({0, 0}); //coordinates
         grid[0][0] = 1;
 
         int level = 0;
@@ -68,7 +68,7 @@ public:
 
         priority_queue<P, vector<P>, greater<P>> pq;
 
-        pq.push({0, {0, 0}});
+        pq.push({0, {0, 0}}); // dist, coordinates
         result[0][0] = 0;
 
         while(!pq.empty()){
