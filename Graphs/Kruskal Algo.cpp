@@ -4,9 +4,9 @@ using namespace std;
 
 class Solution {
     typedef pair<int, int> P;
-  public:
-  
-  vector<int> parent;
+    public:
+
+    vector<int> parent;
     vector<int> rank;
 
     int find(int x){
@@ -47,6 +47,7 @@ class Solution {
        }
        return sum;
    }
+   
     int spanningTree(int V, vector<vector<int>>& edges) {
         parent.resize(V);
         rank.resize(V, 0);
@@ -61,3 +62,4 @@ class Solution {
     }
         
 };
+
