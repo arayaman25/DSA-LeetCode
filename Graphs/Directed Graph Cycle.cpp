@@ -111,8 +111,7 @@ public:
             }
         }
 
-        // If not all vertices were processed, cycle exists
-        if(count == V) return false; 
+        if(count == V) return false;  // no cycle
         return true;
     }
 };
